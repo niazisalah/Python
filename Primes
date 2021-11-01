@@ -1,0 +1,14 @@
+def prime(n):
+  for i in range(1,n):
+    if n%i==0 and i!=1:
+      return False
+    else:
+      return True
+#print (prime(5))
+
+def allprimes(max):
+  for j in range(1,max):
+    if prime(j):
+      print(j)
+#for Example it will display all primes numbers from 1 to 10000000
+print(allprimes(10000000))
